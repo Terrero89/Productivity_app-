@@ -65,30 +65,27 @@ const storyList: Story[] = [
 ];
 interface Props { }
 
-const StoriesPage = () => {
+const TasksPage = () => {
   // make a list that can be dynamically accessed. 
   return <div>
-    <h3>Story List</h3>
-    <button>
-    <Link className="mx-1 border border-white-500 p-1" href={`/stories/${storyList[0].storyID}/tasks`}> TASKS LIST   </Link>
-    </button>
-    <Link className="mx-1" href={`/stories/${storyList[0].storyID}`}>  <p>StoryID 004</p>
+    <h3>tasks List</h3>
+    <Link className="mx-1" href={`/stories/${storyList[0].storyID}/tasks/${storyList[0].storyID}`}>  <p>StoryID 004</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
-    <Link className="mx-1" href={`/stories/${storyList[1].storyID}`}>  <p>StoryID 001</p>
+    <Link className="mx-1" href={`/stories/${storyList[1].storyID}/tasks/${storyList[1].storyID}`}>  <p>StoryID 001</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
-    <Link className="mx-1" href={`/stories/${storyList[2].storyID}`}><p>StoryID 002</p>
+    <Link className="mx-1" href={`/stories/${storyList[2].storyID}/tasks/${storyList[2].storyID}`}><p>StoryID 002</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
-    <Link className="mx-1" href={`/stories/${storyList[4].storyID}`}><p>StoryID 003</p>
+    <Link className="mx-1" href={`/stories/${storyList[4].storyID}/ tasks/${storyList[4].storyID}`}><p>StoryID 003</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
-    <Link className="mx-1" href={`/stories/${storyList[5].storyID}`}><p>StoryID 007</p>
+    <Link className="mx-1" href={`/stories/${storyList[5].storyID}/ tasks/${storyList[5].storyID}`}><p>StoryID 007</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
 
   </div>
 }
 
-export default StoriesPage;
+export default TasksPage;
