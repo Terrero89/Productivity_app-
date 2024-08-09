@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body  className={inter.className}>
         <Header />
-        <div className="border-2 border-blue-100 border-opacity-25 text-white h-auto p-5 rounded-md my-8 container mx-auto">
+        <div className="border-2 border-blue-100 border-opacity-25  border-opacity-10  text-white h-auto p-5 rounded-md my-8 container mx-auto">
         {children}
         </div>
         </body>

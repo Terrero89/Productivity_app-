@@ -8,7 +8,7 @@ const Header: React.FC<Props> = () => {
     <div>
       <header>
         <nav
-          className="border-2 border-white border-opacity-50 p-5 flex justify
+          className="border-2 border-white border-opacity-10 p-5 flex justify
     justify-between rounded-md"
         >
           <div className="flex justify-center mx-5 text-1xl text-gray-100">
