@@ -1,6 +1,9 @@
 import React from 'react'
-import type { Story } from '../../../public/data.tsx'
+import type { Story } from '../../types/story.tsx'
 import Link from 'next/link.js';
+import { Card } from '@nextui-org/card';
+
+
 const storyList: Story[] = [
   {
     story: "Updated database schema for better scalability",
@@ -66,8 +69,11 @@ const storyList: Story[] = [
 interface Props { }
 
 const TasksPage = () => {
-  // make a list that can be dynamically accessed. 
-  return <div>
+  // make a list that can be dynamically accessed.
+  return (
+  <>
+   <div className=" gap-2 grid grid-cols-12 grid-rows-2 px-8 border"></div>
+  <div className='border-2 border-blue-100 border-opacity-25  border-opacity-10  text-white h-auto p-5 rounded-md my-8'>
     <h3>tasks List</h3>
     <Link className="mx-1" href={`/stories/${storyList[0].storyID}/tasks/${storyList[0].storyID}`}>  <p>StoryID 004</p>
       <p>Story</p>
@@ -85,7 +91,13 @@ const TasksPage = () => {
       <p>Story</p>
       <p>Story comment</p> </Link>
 
+
   </div>
+  <Card className="max-w-[400px]">hello crd</Card>
+  <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8 border">
+    hellow
+  </div>
+  </>)
 }
 
 export default TasksPage;

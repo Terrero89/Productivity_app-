@@ -1,16 +1,7 @@
+import type {Story} from '../types/story.tsx';
 
-export interface Story {
-    story: string;
-    storyID: string;
-    comments: string;
-    observation: string;
-    date: string,
-    learnings: string;
-    challenges: string;
-    codeSnippet: string;
-}
 
-const mockData: Story[] = [
+export const mockData: Story[] = [
     {
         story: "Updated database schema for better scalability",
         storyID: "004",
@@ -73,4 +64,3 @@ const mockData: Story[] = [
     }
 ];
 
-export default mockData;

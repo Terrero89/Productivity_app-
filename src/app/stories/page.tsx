@@ -1,6 +1,7 @@
 import React from 'react'
-import type { Story } from '../../../public/data.tsx'
+import type { Story } from '../../types/story.tsx'
 import Link from 'next/link.js';
+import { Button} from "@nextui-org/button";
 const storyList: Story[] = [
   {
     story: "Updated database schema for better scalability",
@@ -70,7 +71,7 @@ const StoriesPage = () => {
   return <div>
     <h3>Story List</h3>
     <button>
-    <Link className="mx-1 border border-white-500 p-1" href={`/stories/${storyList[0].storyID}/tasks`}> TASKS LIST   </Link>
+      <Link className="mx-1 border border-white-500 p-1" href={`/stories/${storyList[0].storyID}/tasks`}> TASKS LIST   </Link>
     </button>
     <Link className="mx-1" href={`/stories/${storyList[0].storyID}`}>  <p>StoryID 004</p>
       <p>Story</p>
@@ -87,7 +88,9 @@ const StoriesPage = () => {
     <Link className="mx-1" href={`/stories/${storyList[5].storyID}`}><p>StoryID 007</p>
       <p>Story</p>
       <p>Story comment</p> </Link>
-
+    <Button color="primary">
+      Button
+    </Button>
   </div>
 }
 
